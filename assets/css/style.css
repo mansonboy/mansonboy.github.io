@@ -1,5 +1,5 @@
 body {
-    
+    background-color: black;
     background-size: cover;
     margin : 0px;
 }
@@ -52,8 +52,7 @@ h2{
 }
 .video{
     width: 100% ;
-    position : fixed;
+  position :absolute;
     z-index : -1;
     opacity: 90%;
-    
 }
