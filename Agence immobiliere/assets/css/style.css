@@ -1,0 +1,317 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4fr 23fr 3fr 7fr 30fr 7fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-top: solid #16314a80 1px;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+}
+
+.logo {
+    margin-left: 345px;
+}
+
+.tel {
+    margin-left: 130px;
+    padding-top: 10px;
+}
+
+.appel {
+    color: white;
+    height: 30px;
+    width: 225px;
+    font-size: 1.2em;
+    background-color: #16314a;
+    border-radius: 15px;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 7;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-size:cover;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+}
+@media screen and (min-width : 800px) {
+    .div2 
+    {
+        background-image: url(../img/famille.jpg);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16314a80;
+    width: 100%;
+    height: 50px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 14px;
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+.message_float {
+    padding-top: 450px;
+    padding-left: 50px;
+    color: #33333e80;
+    font-size: 2em;
+
+}
+
+.div3 {
+    grid-area: 3 / 1 / 4 / 7;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #33333e;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+}
+
+.recherche_bien {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.recherche_louer {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.div4 {
+    grid-area: 4 / 1 / 5 / 7;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: white;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+}
+
+.div4 p,
+h2,
+pre {
+    margin-left: 150px;
+    padding-top: 15px;
+}
+
+.div4 h2,
+.div5 h2 {
+    margin-top: 0px;
+    font-size: 1.6em;
+    display: inline;
+    color: #33333e;
+
+}
+
+.div4 p {
+    margin-bottom: 0px;
+    color: #16314a80;
+    font-weight: bold;
+}
+
+.div4 pre {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.div4 hr,
+.div5 hr {
+    width: 5%;
+    height: 3px;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #16314a;
+}
+
+.div5 {
+    grid-area: 5 / 1 / 6 / 7;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+}
+
+.line_1,
+.line_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.maison {
+    border: solid #16314a80 1px;
+    margin-right: 10px;
+    ;
+}
+
+.redim_maison {
+    width: 300px;
+    height: 225px;
+    margin: 10px;
+
+}
+
+.resume_maison {
+    display: flex;
+    justify-content: space-around;
+    border: solid #16314a80 1px;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+.voir_immo {
+
+    color: white;
+    height: 30px;
+    width: 300px;
+    font-size: 1.2em;
+    background-color: #16314a;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.bouton_immo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.div6 {
+    grid-area: 6 / 1 / 7 / 7;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #33333e;
+    border-left: solid #16314a80 1px;
+    border-right: solid #16314a80 1px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div6 pre {
+    color: white;
+    font-size: 1.4em;
+}
+
+.inscription_mail {
+    margin-top: 30px;
+
+}
+
+.bouton_inscription {
+    width: 372px;
+    height: 40px;
+    background-color: #b7b3af;
+    margin-top: 5px;
+}
+
+.emailAddress {
+    width: 363px;
+    height: 40px;
+}
+
+
+/*Site pour mobile */
+
+@media screen and (max-width : 800px) {
+    .div1 {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .logo {
+        margin: 10px;
+    }
+
+    .tel {
+        margin-left: 60px;
+    }
+
+    .div2 {
+        margin: 0px;
+        flex-direction: column;
+        background-color: #16314a;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    .div3 {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .recherche_bien {
+        flex-direction: column;
+        margin-top: 2px;
+    }
+
+    .recherche_louer {
+        margin: 0px;
+        justify-content: flex-start;
+    }
+
+    .div4 {
+        margin: 0px;
+    }
+
+    .div4 h2,
+    p,
+    pre {
+        flex-direction: column;
+        margin : 0px;
+    }
+
+    .div5 {
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .div5 h2{
+        font-size : 1.2em;
+        margin : 0px;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    .line_1,
+    .line_2 {
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redim_maison {
+        width: 200px;
+        height: 150px;
+    }
+}
