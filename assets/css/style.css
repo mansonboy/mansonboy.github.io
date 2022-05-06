@@ -52,7 +52,10 @@ h2{
 }
 .video{
     width: 100% ;
-  position :absolute;
+  position :fixed;
     z-index : -1;
     opacity: 92%;
+}
+.text_color{
+    color : white;
 }
